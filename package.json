@@ -1,0 +1,37 @@
+{
+  "name": "texturepacker-yaml",
+  "version": "1.0.0",
+  "description": "Converts TexturePacker-formatted JSON to nested YAML",
+  "preferGlobal": true,
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./cli.js test/sprites.json | diff test/sprites.yml -"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webnard/texturepacker-yaml.git"
+  },
+  "keywords": [
+    "texturepacker",
+    "yaml",
+    "json",
+    "spritesheet",
+    "sprites"
+  ],
+  "author": "Ian Hunter <ian@ianhunter.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webnard/texturepacker-yaml/issues"
+  },
+  "homepage": "https://github.com/webnard/texturepacker-yaml#readme",
+  "dependencies": {
+    "extend": "^3.0.0",
+    "json2yaml": "^1.0.3"
+  },
+  "bin": {
+    "texturepacker-yaml": "./cli.js"
+  }
+}
