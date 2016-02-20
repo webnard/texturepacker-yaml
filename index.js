@@ -13,18 +13,28 @@ module.exports = {
      "frames": {}
     };
 
-    Object.keys(data.frames).forEach(function(filename) {
+    Object.keys(data.frames).forEach(function(filename, kindex) {
       var shortfile = filename.substr(0, filename.lastIndexOf('.'));
       var item = newData.frames;
       var meta;
+      var parts = shortfile.split('-');
+      var hasNumber = !Number.isNaN(parseInt(parts[parts.length - 1], 10));
+      var number = hasNumber ? parseInt(parts[parts.length - 1], 10) : kindex;
 
       shortfile.split('-').forEach(function(part, idx, arr) {
-        if(idx === arr.length-2) {
+        if(idx === arr.length-2 && hasNumber) {
           item[part] = item[part] || [];
         }
         else if(idx === arr.length-1) {
-          meta = {index: parseInt(part), filename: filename};
-          return;
+          if(!hasNumber) {
+            item[part] = item[part] || [];
+            meta = {index: item[part].length, filename: filename};
+          }
+          else
+          {
+            meta = {index: number, filename: filename};
+            return;
+          }
         }
         else {
           item[part] = item[part] || {};

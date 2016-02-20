@@ -1,6 +1,6 @@
 {
   "name": "texturepacker-yaml",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts TexturePacker-formatted JSON to nested YAML",
   "preferGlobal": true,
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./cli.js test/sprites.json | diff test/sprites.yml -"
+    "test": "test/test.sh"
   },
   "repository": {
     "type": "git",
