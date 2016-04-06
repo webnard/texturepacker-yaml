@@ -9,178 +9,190 @@
       h: 100
     scale: "1"
     smartupdate: "$TexturePacker:SmartUpdate:195475e76817293c76e1f33359921f28:a23015fb65712626074f678cd7ddb5cd:1eabdf11f75e3a4fe3147baf7b5be24b$"
-  frames: 
+  sprites: 
     digit: 
       black: 
-        - 
-          index: 1
-          filename: "digit-black-1.png"
-          frame: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
-        - 
-          index: 2
-          filename: "digit-black-2.png"
-          frame: 
-            x: 100
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
-        - 
-          index: 3
-          filename: "digit-black-3.png"
-          frame: 
-            x: 200
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
+        frames: 
+          - 
+            index: 0
+            filename: "digit-black-1.png"
+            frame: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+          - 
+            index: 1
+            filename: "digit-black-2.png"
+            frame: 
+              x: 100
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+          - 
+            index: 2
+            filename: "digit-black-3.png"
+            frame: 
+              x: 200
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+        hitbox: 
+          w: 100
+          h: 100
       red: 
-        - 
-          index: 1
-          filename: "digit-red-1.png"
-          frame: 
-            x: 300
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
-        - 
-          index: 2
-          filename: "digit-red-2.png"
-          frame: 
-            x: 400
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
-        - 
-          index: 3
-          filename: "digit-red-3.png"
-          frame: 
-            x: 500
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
+        frames: 
+          - 
+            index: 0
+            filename: "digit-red-1.png"
+            frame: 
+              x: 300
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+          - 
+            index: 1
+            filename: "digit-red-2.png"
+            frame: 
+              x: 400
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+          - 
+            index: 2
+            filename: "digit-red-3.png"
+            frame: 
+              x: 500
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+        hitbox: 
+          w: 100
+          h: 100
     word: 
       black: 
-        - 
-          index: 1
-          filename: "word-black-1.png"
-          frame: 
-            x: 600
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
-        - 
-          index: 2
-          filename: "word-black-2.png"
-          frame: 
-            x: 700
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
+        frames: 
+          - 
+            index: 0
+            filename: "word-black-1.png"
+            frame: 
+              x: 600
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+          - 
+            index: 1
+            filename: "word-black-2.png"
+            frame: 
+              x: 700
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+        hitbox: 
+          w: 100
+          h: 100
 

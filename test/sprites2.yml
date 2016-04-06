@@ -9,36 +9,67 @@
       h: 100
     scale: "1"
     smartupdate: "$TexturePacker:SmartUpdate:73f295b8d308b6989f2f1a1c09848070:1e16db4325f095b14f56184f830b0037:8d4f35dc44d6882bf65178eb8274681f$"
-  frames: 
+  sprites: 
     hat: 
       bowler: 
-        - 
-          index: 0
-          filename: "hat-bowler.png"
-          frame: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          rotated: false
-          trimmed: false
-          spriteSourceSize: 
-            x: 0
-            y: 0
-            w: 100
-            h: 100
-          sourceSize: 
-            w: 100
-            h: 100
-          pivot: 
-            x: 0.5
-            y: 0.5
+        frames: 
+          - 
+            index: 0
+            filename: "hat-bowler.png"
+            frame: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+        hitbox: 
+          w: 100
+          h: 100
       top: 
+        frames: 
+          - 
+            index: 0
+            filename: "hat-top.png"
+            frame: 
+              x: 100
+              y: 0
+              w: 100
+              h: 100
+            rotated: false
+            trimmed: false
+            spriteSourceSize: 
+              x: 0
+              y: 0
+              w: 100
+              h: 100
+            sourceSize: 
+              w: 100
+              h: 100
+            pivot: 
+              x: 0.5
+              y: 0.5
+        hitbox: 
+          w: 100
+          h: 100
+    smile: 
+      frames: 
         - 
           index: 0
-          filename: "hat-top.png"
+          filename: "smile.png"
           frame: 
-            x: 100
+            x: 200
             y: 0
             w: 100
             h: 100
@@ -55,26 +86,7 @@
           pivot: 
             x: 0.5
             y: 0.5
-    smile: 
-      - 
-        index: 0
-        filename: "smile.png"
-        frame: 
-          x: 200
-          y: 0
-          w: 100
-          h: 100
-        rotated: false
-        trimmed: false
-        spriteSourceSize: 
-          x: 0
-          y: 0
-          w: 100
-          h: 100
-        sourceSize: 
-          w: 100
-          h: 100
-        pivot: 
-          x: 0.5
-          y: 0.5
+      hitbox: 
+        w: 100
+        h: 100
 
