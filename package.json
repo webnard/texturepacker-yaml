@@ -1,6 +1,6 @@
 {
   "name": "texturepacker-yaml",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Converts TexturePacker-formatted JSON to nested YAML",
   "preferGlobal": true,
   "main": "index.js",

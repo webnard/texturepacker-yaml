@@ -12,8 +12,11 @@ module.exports = {
      "meta": data['meta'],
      "sprites": {}
     };
-    var imgpath = data.meta.image.split('/');
-    newData.meta.image = imgpath[imgpath.length - 1];
+    if(data.meta.image) {
+      var imgpath = data.meta.image.split('/');
+      newData.meta.image = imgpath[imgpath.length - 1];
+    };
+
     var arr;
     if(data.frames instanceof Array) {
       arr = data.frames;
