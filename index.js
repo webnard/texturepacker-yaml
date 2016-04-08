@@ -12,16 +12,40 @@ module.exports = {
      "meta": data['meta'],
      "sprites": {}
     };
+    var imgpath = data.meta.image.split('/');
+    newData.meta.image = imgpath[imgpath.length - 1];
+    var arr;
+    if(data.frames instanceof Array) {
+      arr = data.frames;
+    }
+    else
+    {
+      arr = Object.keys(data.frames);
+    }
 
-    Object.keys(data.frames).forEach(function(filename, kindex) {
+    var offset = 0;
+    arr.forEach(function(filename, kindex) {
+      var frame;
+      if(filename instanceof Object) {
+        frame = filename;
+        filename = filename.filename;
+      }
+      else
+      {
+        frame = data.frames[filename];
+      }
       var shortfile = filename.substr(0, filename.lastIndexOf('.'));
       var item = newData.sprites;
       var meta;
-      var parts = shortfile.split('-');
+      var parts = shortfile.split(/(?:-|\s(?=\d+$))/);
       var hasNumber = !Number.isNaN(parseInt(parts[parts.length - 1], 10));
       var number = hasNumber ? parseInt(parts[parts.length - 1], 10) : kindex;
+      if(number === 0) {
+        offset = 1;
+      }
+      number += offset;
 
-      shortfile.split('-').forEach(function(part, idx, arr) {
+      parts.forEach(function(part, idx, arr) {
         if(idx === arr.length-2 && hasNumber) {
           item[part] = item[part] || {"frames": [], hitbox: {w: 0, h: 0}};
         }
@@ -41,10 +65,10 @@ module.exports = {
         }
         item = item[part];
       });
-      extend(true, meta, data.frames[filename]);
+      extend(true, meta, frame);
       item.frames.push(meta);
-      item.hitbox.w = data.frames[filename].sourceSize.w;
-      item.hitbox.h = data.frames[filename].sourceSize.h;
+      item.hitbox.w = frame.sourceSize.w;
+      item.hitbox.h = frame.sourceSize.h;
     });
     return json2yaml.stringify(newData);
   }
